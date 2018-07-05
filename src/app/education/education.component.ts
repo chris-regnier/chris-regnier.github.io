@@ -1,5 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit                                                     } from '@angular/core';
+import Resume                                                                    from '../../assets/resume';
 
+declare var System: any;
 @Component({
     selector: 'app-education',
     templateUrl: './education.component.html',
@@ -7,23 +9,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EducationComponent implements OnInit {
 
-    schools = [
-        {
-            institution: "Lafayette College"
-            , city: "Easton"
-            , state: "PA"
-            , startDate: "August, 2011"
-            , endDate: "May, 2014"
-            , tagline: "BS Neuroscience; Cum Laude, Honors, Marquis Scholar"
-            , roles: [
-                {
-                    title: "Thesis"
-                    , description: "The effect of reading literature of verbal and visuospatial divergent thinking."
-                }
-            ]
-        }
-    ];
-    constructor() { }
+    schools: Array<Object>;
+    constructor() {
+        this.schools = Resume.schools;
+    }
 
     ngOnInit() {
     }

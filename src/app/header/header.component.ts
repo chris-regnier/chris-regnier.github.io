@@ -1,5 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit                                                     } from '@angular/core';
+import Resume                                                                    from '../../assets/resume';
 
+declare var System: any;
 @Component({
     selector: 'app-header',
     templateUrl: './header.component.html',
@@ -7,10 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-    name = "Christopher Regnier";
-    tagline = "full stack + devops";
+    name : string;
+    tagline: string;
     constructor() {
-
+        this.name = Resume.name;
+        this.tagline = Resume.tagline;
     }
 
     ngOnInit() {
