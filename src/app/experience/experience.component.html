@@ -1,12 +1,11 @@
-<h2>Experience</h2>
-<mat-card *ngFor="let job of jobs;" class="m-2">
+<div *ngFor="let job of jobs;" class="m-2">
     <table class="table table-borderless table-sm" style="border-collapse: separate; border-spacing: 1rem 0em;">
-        <thead>
-            <th scope="col" class="col-4 text-right">
+        <thead class="lead">
+            <th scope="col" class="col-4 text-right font-weight-light">
                 <span>{{ job.startDate }}</span> &ndash; <span>{{ job.endDate }}</span>
             </th>
             <th scope="col" class="col-9">
-                {{ job.company }}<span class="float-right">{{ job.city }}, {{ job.state }}</span>
+                {{ job.company }}<span class="float-right font-weight-light">{{ job.city }}, {{ job.state }}</span>
             </th>
         </thead>
         <tbody>
@@ -16,4 +15,4 @@
             </tr>
         </tbody>
     </table>
-</mat-card>
+</div>

@@ -9,7 +9,7 @@ export class ExperienceComponent implements OnInit {
 
     jobs = [
         {
-            company: "Continuum Health Solutions, LLC"
+            company: "Continuum Health Solutions"
             , city: "Centennial"
             , state: "CO"
             , startDate: "April, 2017"
@@ -26,7 +26,7 @@ export class ExperienceComponent implements OnInit {
             ]
         }
         , {
-            company: "AccuMed HealthCare Research, LLC"
+            company: "AccuMed HealthCare Research"
             , city: "Centennial"
             , state: "CO"
             , startDate: "April, 2017"

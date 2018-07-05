@@ -1,6 +1,5 @@
 import { BrowserModule                                                         } from '@angular/platform-browser';
 import { NgModule                                                              } from '@angular/core';
-import { MatCardModule, MatTableModule                                         } from '@angular/material';
 
 import { AppComponent                                                          } from './app.component';
 import { HeaderComponent                                                       } from './header/header.component';
@@ -16,8 +15,6 @@ import { EducationComponent } from './education/education.component';
   ],
   imports: [
     BrowserModule
-    , MatCardModule
-    , MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
