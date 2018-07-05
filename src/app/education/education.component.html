@@ -1,0 +1,23 @@
+<h2>Education</h2>
+<mat-card *ngFor="let school of schools;" class="m-2">
+    <table class="table table-borderless table-sm" style="border-collapse: separate; border-spacing: 1rem 0em;">
+        <thead>
+            <th scope="col" class="col-4 text-right">
+                <span>{{ school.startDate }}</span> &ndash; <span>{{ school.endDate }}</span>
+            </th>
+            <th scope="col" class="col-9">
+                {{ school.institution }}<span class="float-right">{{ school.city }}, {{ school.state }}</span>
+            </th>
+        </thead>
+        <tbody>
+            <tr scope="row" >
+                <td></td>
+                <td class="text-justified">{{ school.tagline }}</td>
+            </tr>
+            <tr scope="row" *ngFor="let role of school.roles;">
+                <th class="font-weight-light text-right">{{ role.title }}</th>
+                <td class="text-justified font-italic">{{ role.description }}</td>
+            </tr>
+        </tbody>
+    </table>
+</mat-card>
