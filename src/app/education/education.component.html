@@ -1,11 +1,11 @@
-<h2>Education</h2>
+<h2 [style.color]="educationColor" class="text-center border-top border-bottom p-3">Education</h2>
 <div *ngFor="let school of schools;" class="m-2">
     <table class="table table-borderless table-sm" style="border-collapse: separate; border-spacing: 1rem 0em;">
         <thead class="lead">
             <th scope="col" class="col-4 text-right font-weight-light">
                 <span>{{ school.startDate }}</span> &ndash; <span>{{ school.endDate }}</span>
             </th>
-            <th scope="col" class="col-9">
+            <th scope="col" class="col-9" [style.color]="educationColor">
                 {{ school.institution }}<span class="float-right font-weight-light">{{ school.city }}, {{ school.state }}</span>
             </th>
         </thead>

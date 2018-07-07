@@ -9,9 +9,13 @@ declare var System: any;
 })
 export class ExperienceComponent implements OnInit {
 
+    jobColor: string;
     jobs: any;
+    links: any;
     constructor() {
+        this.jobColor = Resume.jobColor;
         this.jobs = Resume.jobs;
+        this.links = Resume.links;
     }
 
     ngOnInit() {

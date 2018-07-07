@@ -1,17 +1,18 @@
+<h2 [style.color]="jobColor" class="text-center border-top border-bottom p-3">Experience</h2>
 <div *ngFor="let job of jobs;" class="m-2">
     <table class="table table-borderless table-sm" style="border-collapse: separate; border-spacing: 1rem 0em;">
         <thead class="lead">
             <th scope="col" class="col-4 text-right font-weight-light">
                 <span>{{ job.startDate }}</span> &ndash; <span>{{ job.endDate }}</span>
             </th>
-            <th scope="col" class="col-9">
+            <th scope="col" class="col-9" [style.color]="jobColor">
                 {{ job.company }}<span class="float-right font-weight-light">{{ job.city }}, {{ job.state }}</span>
             </th>
         </thead>
         <tbody>
             <tr scope="row" *ngFor="let role of job.roles;">
-                <th class="font-weight-light text-right">{{ role.title }}</th>
-                <td class="text-justified">{{ role.description }}</td>
+                <th [style.color]="jobColor" class="font-weight-light text-right">{{ role.title }}</th>
+                <td class="text-justified" [innerHtml]="role.description | linkify:links"></td>
             </tr>
         </tbody>
     </table>

@@ -5,13 +5,15 @@ import { AppComponent                                                          }
 import { HeaderComponent                                                       } from './header/header.component';
 import { ExperienceComponent                                                   } from './experience/experience.component';
 import { EducationComponent } from './education/education.component';
+import { LinkifyPipe } from './linkify.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     ExperienceComponent,
-    EducationComponent
+    EducationComponent,
+    LinkifyPipe
   ],
   imports: [
     BrowserModule
