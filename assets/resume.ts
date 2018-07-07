@@ -1,6 +1,71 @@
 export const Resume: any = {
     "name": "Christopher Regnier"
     , "tagline": "full stack + devops"
+    , "accentColor": "#7b1fa2"
+    , "jobColor": "#512da8"
+    , "educationColor": "#303f9f"
+    , "links": [
+        {
+            "search": "PHP"
+            , "href": "https://secure.php.net/"
+            , "class": "text-monospace"
+        }
+        , {
+            "search": "LXD"
+            , "href": "https://linuxcontainers.org/lxd/introduction/"
+            , "class": "text-monospace"
+        }
+        , {
+            "search": "Angular5/6"
+            , "href": "https://angular.io/"
+            , "class": "text-monospace"
+        }
+        , {
+            "search": "MongoDB"
+            , "href": "https://www.mongodb.com/"
+            , "class": "text-monospace"
+        }
+        , {
+            "search": "D3.js"
+            , "href": "https://d3js.org/"
+            , "class": "text-monospace"
+        }
+        , {
+            "search": "MariaDB"
+            , "href": "https://mariadb.org/"
+            , "class": "text-monospace"
+        }
+        , {
+            "search": "Docker"
+            , "href": "https://www.docker.com/"
+            , "class": "text-monospace"
+        }
+        , {
+            "search": "AWS"
+            , "href": "https://aws.amazon.com/"
+            , "class": "text-monospace"
+        }
+        , {
+            "search": "Ubuntu"
+            , "href": "https://www.ubuntu.com/"
+            , "class": "text-monospace"
+        }
+        , {
+            "search": "Python"
+            , "href": "https://www.python.org/"
+            , "class": "text-monospace"
+        }
+        , {
+            "search": "JavaScript"
+            , "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+            , "class": "text-monospace"
+        }
+        , {
+            "search": "MySQL/InnoDB"
+            , "href": "https://dev.mysql.com/doc/refman/5.6/en/innodb-introduction.html"
+            , "class": "text-monospace"
+        }
+    ]
     , "jobs": [
         {
             "company": "Continuum Health Solutions"
@@ -15,7 +80,7 @@ export const Resume: any = {
                 }
                 , {
                     "title": "DevOps Engineer"
-                    , "description": "Created and maintained a private intranet on three Dell PowerEdge servers,  extended with AWS, using Ubuntu, LXD, and Docker. Built custom Python utilities for CI/CD pipelines."
+                    , "description": "Created and maintained a private intranet on three Dell PowerEdge servers, extended with AWS, using Ubuntu, LXD, and Docker. Built custom Python utilities for CI/CD pipelines."
                 }
             ]
         }
@@ -58,7 +123,7 @@ export const Resume: any = {
             , "roles": [
                 {
                     "title": "Team Lead"
-                    , "description": "Operations and team lead for new markets."
+                    , "description": "Operations and team lead for new markets; managed three direct reports."
                 }
                 , {
                     "title": "Underwriting"
@@ -91,7 +156,7 @@ export const Resume: any = {
             , "state": "PA"
             , "startDate": "August, 2011"
             , "endDate": "May, 2014"
-            , "tagline": "BS Neuroscience; Cum Laude, Honors, Marquis Scholar"
+            , "tagline": "BS Neuroscience; Cum Laude, 3.69 GPA; Honors, Marquis Scholar"
             , "roles": [
                 {
                     "title": "Thesis"
