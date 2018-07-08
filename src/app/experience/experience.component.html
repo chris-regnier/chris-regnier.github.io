@@ -1,11 +1,14 @@
-<h2 [style.color]="jobColor" class="text-center border-top border-bottom p-3">Experience</h2>
+<div class="border-top border-bottom">
+    <h2 [style.color]="jobColor" class="col-8 offset-4 p-3">experience</h2>
+</div>
+
 <div *ngFor="let job of jobs;" class="m-2">
     <table class="table table-borderless table-sm" style="border-collapse: separate; border-spacing: 1rem 0em;">
         <thead class="lead">
             <th scope="col" class="col-4 text-right font-weight-light">
                 <span>{{ job.startDate }}</span> &ndash; <span>{{ job.endDate }}</span>
             </th>
-            <th scope="col" class="col-9" [style.color]="jobColor">
+            <th scope="col" class="col-8" [style.color]="jobColor">
                 {{ job.company }}<span class="float-right font-weight-light">{{ job.city }}, {{ job.state }}</span>
             </th>
         </thead>

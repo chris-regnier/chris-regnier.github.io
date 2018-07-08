@@ -4,6 +4,7 @@ export const Resume: any = {
     , "accentColor": "#7b1fa2"
     , "jobColor": "#512da8"
     , "educationColor": "#303f9f"
+    , "skillsColor": "#c2185b"
     , "links": [
         {
             "search": "PHP"
@@ -162,6 +163,50 @@ export const Resume: any = {
                     "title": "Thesis"
                     , "description": "The effect of reading literature of verbal and visuospatial divergent thinking."
                 }
+            ]
+        }
+    ]
+    , "skills": [
+        {
+            "topic": "languages"
+            , "tags": [
+                "PHP"
+                , "TypeScript"
+                , "SQL"
+                , "Bash"
+                , "Python"
+            ]
+        }
+        , {
+            "topic": "technologies"
+            , "tags": [
+                "Linux"
+                , "Ubuntu"
+                , "LXD"
+                , "Docker"
+                , "AWS"
+                , "Git"
+                , "Jenkins"
+                , "Angular5/6"
+                , "D3.js"
+                , "ASCX12"
+            ]
+        }
+        , {
+            "topic": "databases"
+            , "tags": [
+                "MySQL"
+                , "MariaDB"
+                , "PostgreSQL"
+                , "MongoDB"
+                , "Redis"
+            ]
+        }
+        , {
+            "topic": "fun"
+            , "tags": [
+                "writing fiction"
+                , "rustic cooking"
             ]
         }
     ]

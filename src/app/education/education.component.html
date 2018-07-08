@@ -1,11 +1,13 @@
-<h2 [style.color]="educationColor" class="text-center border-top border-bottom p-3">Education</h2>
+<div class="border-top border-bottom">
+    <h2 [style.color]="educationColor" class="col-8 offset-4 p-3">education</h2>
+</div>
 <div *ngFor="let school of schools;" class="m-2">
     <table class="table table-borderless table-sm" style="border-collapse: separate; border-spacing: 1rem 0em;">
         <thead class="lead">
             <th scope="col" class="col-4 text-right font-weight-light">
                 <span>{{ school.startDate }}</span> &ndash; <span>{{ school.endDate }}</span>
             </th>
-            <th scope="col" class="col-9" [style.color]="educationColor">
+            <th scope="col" class="col-8" [style.color]="educationColor">
                 {{ school.institution }}<span class="float-right font-weight-light">{{ school.city }}, {{ school.state }}</span>
             </th>
         </thead>
@@ -15,7 +17,7 @@
                 <td class="text-justified">{{ school.tagline }}</td>
             </tr>
             <tr scope="row" *ngFor="let role of school.roles;">
-                <th class="font-weight-light text-right">{{ role.title }}</th>
+                <th class="font-weight-light text-right" [style.color]="educationColor">{{ role.title }}</th>
                 <td class="text-justified font-italic">{{ role.description }}</td>
             </tr>
         </tbody>

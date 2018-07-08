@@ -6,6 +6,7 @@ import { HeaderComponent                                                       }
 import { ExperienceComponent                                                   } from './experience/experience.component';
 import { EducationComponent } from './education/education.component';
 import { LinkifyPipe } from './linkify.pipe';
+import { SkillsComponent } from './skills/skills.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { LinkifyPipe } from './linkify.pipe';
     HeaderComponent,
     ExperienceComponent,
     EducationComponent,
-    LinkifyPipe
+    LinkifyPipe,
+    SkillsComponent
   ],
   imports: [
     BrowserModule
