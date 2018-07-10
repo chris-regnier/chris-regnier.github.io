@@ -4,66 +4,67 @@ export const Resume: any = {
     , "accentColor": "#7b1fa2"
     , "jobColor": "#512da8"
     , "educationColor": "#303f9f"
+    , "skillsColor": "#c2185b"
     , "links": [
         {
             "search": "PHP"
             , "href": "https://secure.php.net/"
-            , "class": "text-monospace"
+            , "class": "badge badge-light text-monospace"
         }
         , {
             "search": "LXD"
             , "href": "https://linuxcontainers.org/lxd/introduction/"
-            , "class": "text-monospace"
+            , "class": "badge badge-light text-monospace"
         }
         , {
             "search": "Angular5/6"
             , "href": "https://angular.io/"
-            , "class": "text-monospace"
+            , "class": "badge badge-light text-monospace"
         }
         , {
             "search": "MongoDB"
             , "href": "https://www.mongodb.com/"
-            , "class": "text-monospace"
+            , "class": "badge badge-light text-monospace"
         }
         , {
             "search": "D3.js"
             , "href": "https://d3js.org/"
-            , "class": "text-monospace"
+            , "class": "badge badge-light text-monospace"
         }
         , {
             "search": "MariaDB"
             , "href": "https://mariadb.org/"
-            , "class": "text-monospace"
+            , "class": "badge badge-light text-monospace"
         }
         , {
             "search": "Docker"
             , "href": "https://www.docker.com/"
-            , "class": "text-monospace"
+            , "class": "badge badge-light text-monospace"
         }
         , {
             "search": "AWS"
             , "href": "https://aws.amazon.com/"
-            , "class": "text-monospace"
+            , "class": "badge badge-light text-monospace"
         }
         , {
             "search": "Ubuntu"
             , "href": "https://www.ubuntu.com/"
-            , "class": "text-monospace"
+            , "class": "badge badge-light text-monospace"
         }
         , {
             "search": "Python"
             , "href": "https://www.python.org/"
-            , "class": "text-monospace"
+            , "class": "badge badge-light text-monospace"
         }
         , {
             "search": "JavaScript"
             , "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-            , "class": "text-monospace"
+            , "class": "badge badge-light text-monospace"
         }
         , {
             "search": "MySQL/InnoDB"
             , "href": "https://dev.mysql.com/doc/refman/5.6/en/innodb-introduction.html"
-            , "class": "text-monospace"
+            , "class": "badge badge-light text-monospace"
         }
     ]
     , "jobs": [
@@ -162,6 +163,50 @@ export const Resume: any = {
                     "title": "Thesis"
                     , "description": "The effect of reading literature of verbal and visuospatial divergent thinking."
                 }
+            ]
+        }
+    ]
+    , "skills": [
+        {
+            "topic": "languages"
+            , "tags": [
+                "PHP"
+                , "TypeScript"
+                , "SQL"
+                , "Bash"
+                , "Python"
+            ]
+        }
+        , {
+            "topic": "technologies"
+            , "tags": [
+                "Linux"
+                , "Ubuntu"
+                , "LXD"
+                , "Docker"
+                , "AWS"
+                , "Git"
+                , "Jenkins"
+                , "Angular5/6"
+                , "D3.js"
+                , "ASCX12"
+            ]
+        }
+        , {
+            "topic": "databases"
+            , "tags": [
+                "MySQL"
+                , "MariaDB"
+                , "PostgreSQL"
+                , "MongoDB"
+                , "Redis"
+            ]
+        }
+        , {
+            "topic": "fun"
+            , "tags": [
+                "writing fiction"
+                , "rustic cooking"
             ]
         }
     ]
