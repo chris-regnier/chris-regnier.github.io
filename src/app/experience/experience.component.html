@@ -1,10 +1,13 @@
-<div class="border-top border-bottom">
+<div class="border-top border-bottom d-none d-lg-block">
     <h2 [style.color]="jobColor" class="col-8 offset-4 p-3">experience</h2>
 </div>
+<div class="d-block d-none d-lg-none">
+    <h4 [style.color]="jobColor" class="col-8 offset-4 p-3">experience</h4>
+</div>
 
-<div *ngFor="let job of jobs;" class="m-2">
+<div *ngFor="let job of jobs;" class="m-2 table-responsive">
     <table class="table table-borderless table-sm" style="border-collapse: separate; border-spacing: 1rem 0em;">
-        <thead class="lead">
+        <thead class="lead row">
             <th scope="col" class="col-4 text-right font-weight-light">
                 <span>{{ job.startDate }}</span> &ndash; <span>{{ job.endDate }}</span>
             </th>
@@ -13,9 +16,9 @@
             </th>
         </thead>
         <tbody>
-            <tr scope="row" *ngFor="let role of job.roles;">
-                <th [style.color]="jobColor" class="font-weight-light text-right">{{ role.title }}</th>
-                <td class="text-justified" [innerHtml]="role.description | linkify:links"></td>
+            <tr scope="row" *ngFor="let role of job.roles;" class="row">
+                <th [style.color]="jobColor" class="col-4 font-weight-light text-right">{{ role.title }}</th>
+                <td class="col-8 text-justified" [innerHtml]="role.description | linkify:links"></td>
             </tr>
         </tbody>
     </table>

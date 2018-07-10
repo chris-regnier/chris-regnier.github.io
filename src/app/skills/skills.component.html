@@ -1,12 +1,15 @@
-<div class="border-top border-bottom">
+<div class="border-top border-bottom d-none d-lg-block">
     <h2 [style.color]="skillsColor" class="col-8 offset-4 p-3">skills</h2>
+</div>
+<div class="d-block d-none d-lg-none">
+    <h4 [style.color]="skillsColor" class="col-8 offset-4 p-3">skills</h4>
 </div>
 <div *ngFor="let skill of skills;" class="m-2">
     <table class="table table-borderless table-sm" style="border-collapse: separate; border-spacing: 1rem 0em;">
         <tbody>
-            <tr scope="row" >
+            <tr scope="row" class="row">
                 <td class="text-right font-weight-light col-4" [style.color]="skillsColor">{{ skill.topic }}</td>
-                <td class="text-left col-8">
+                <td class="text-left col-8 d-flex flex-wrap">
                     <span *ngFor="let tag of skill.tags" class="text-monospace m-1" [innerHtml]="tag | linkify:links"></span>
                 </td>
             </tr>
