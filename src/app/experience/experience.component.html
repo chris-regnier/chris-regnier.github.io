@@ -8,7 +8,7 @@
 <div *ngFor="let job of jobs;" class="m-2 table-responsive">
     <table class="table table-borderless table-sm" style="border-collapse: separate; border-spacing: 1rem 0em;">
         <thead class="lead row">
-            <th scope="col" class="col-4 text-right font-weight-light">
+            <th scope="col" class="col-4 text-black-50 text-right font-weight-light">
                 <span>{{ job.startDate }}</span> &ndash; <span>{{ job.endDate }}</span>
             </th>
             <th scope="col" class="col-8" [style.color]="jobColor">
@@ -18,7 +18,7 @@
         <tbody>
             <tr scope="row" *ngFor="let role of job.roles;" class="row">
                 <th [style.color]="jobColor" class="col-4 font-weight-light text-right">{{ role.title }}</th>
-                <td class="col-8 text-justified" [innerHtml]="role.description | linkify:links"></td>
+                <td class="col-8 text-justified text-black-50" [innerHtml]="role.description | linkify:links"></td>
             </tr>
         </tbody>
     </table>

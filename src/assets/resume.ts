@@ -2,8 +2,8 @@ export const Resume: any = {
     "name": "Christopher Regnier"
     , "tagline": "full stack + devops"
     , "accentColor": "#7b1fa2"
-    , "jobColor": "#512da8"
-    , "educationColor": "#303f9f"
+    , "jobColor": "#6a1b9a"
+    , "educationColor": "#512da8"
     , "skillsColor": "#c2185b"
     , "links": [
         {
@@ -18,7 +18,7 @@ export const Resume: any = {
         }
         , {
             "search": "Angular5/6"
-            , "href": "https://angular.io/"
+            , "href": "https://github.com/chris-regnier/sample-interface"
             , "class": "badge badge-light text-monospace"
         }
         , {
