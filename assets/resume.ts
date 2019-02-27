@@ -2,8 +2,8 @@ export const Resume: any = {
     "name": "Christopher Regnier"
     , "tagline": "full stack + devops"
     , "accentColor": "#7b1fa2"
-    , "jobColor": "#512da8"
-    , "educationColor": "#303f9f"
+    , "jobColor": "#6a1b9a"
+    , "educationColor": "#512da8"
     , "skillsColor": "#c2185b"
     , "links": [
         {
@@ -18,6 +18,11 @@ export const Resume: any = {
         }
         , {
             "search": "Angular5/6"
+            , "href": "https://github.com/chris-regnier/sample-interface"
+            , "class": "badge badge-light text-monospace"
+        }
+        , {
+            "search": "Angular6/7"
             , "href": "https://angular.io/"
             , "class": "badge badge-light text-monospace"
         }
@@ -66,14 +71,32 @@ export const Resume: any = {
             , "href": "https://dev.mysql.com/doc/refman/5.6/en/innodb-introduction.html"
             , "class": "badge badge-light text-monospace"
         }
+        , {
+            "search": "Ansible"
+            , "href": "https://www.ansible.com/overview/it-automation"
+            , "class": "badge badge-light text-monospace"
+        }
     ]
     , "jobs": [
         {
+            "company": "Cigna"
+            , "city": "Greenwood Village"
+            , "state": "CO"
+            , "startDate": "September, 2018"
+            , "endDate": "Present"
+            , "roles": [
+                {
+                    "title": "Full Stack Engineer"
+                    , "description": "Built full stack applications that employed RESTful API backends (Python) and single page applications on the front (Angular6/7). Implemented DevOps pipeline using Jenkins, Docker, and Ansible.  Developed solutions for moving from on-premises servers to the cloud (AWS)."
+                }
+            ]
+        }
+        , {
             "company": "Continuum Health Solutions"
             , "city": "Centennial"
             , "state": "CO"
             , "startDate": "April, 2017"
-            , "endDate": "Present"
+            , "endDate": "September, 2018"
             , "roles": [
                 {
                     "title": "Full Stack Developer"
@@ -90,7 +113,7 @@ export const Resume: any = {
             , "city": "Centennial"
             , "state": "CO"
             , "startDate": "April, 2017"
-            , "endDate": "Present"
+            , "endDate": "June, 2018"
             , "roles": [
                 {
                     "title": "Contract Developer"
@@ -132,23 +155,6 @@ export const Resume: any = {
                 }
             ]
         }
-        , {
-            "company": "Newmont Mining"
-            , "city": "Greenwood Village"
-            , "state": "CO"
-            , "startDate": "May, 2010"
-            , "endDate": "August, 2012"
-            , "roles": [
-                {
-                    "title": "Contractor"
-                    , "description": "Created, led, and integrated an in-house software testing team."
-                }
-                , {
-                    "title": "Intern"
-                    , "description": "Rotated between software development, geology, administration, and IT for corporate headquarters."
-                }
-            ]
-        }
     ]
     , "schools": [
         {
@@ -175,6 +181,7 @@ export const Resume: any = {
                 , "SQL"
                 , "Bash"
                 , "Python"
+                , "Groovy"
             ]
         }
         , {
@@ -188,8 +195,10 @@ export const Resume: any = {
                 , "Git"
                 , "Jenkins"
                 , "Angular5/6"
+                , "Angular6/7"
                 , "D3.js"
                 , "ASCX12"
+                , "Ansible"
             ]
         }
         , {
@@ -205,8 +214,9 @@ export const Resume: any = {
         , {
             "topic": "fun"
             , "tags": [
-                "writing fiction"
-                , "rustic cooking"
+                "writing"
+                , "reading"
+                , "cooking"
             ]
         }
     ]
